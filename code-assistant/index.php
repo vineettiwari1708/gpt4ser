@@ -1,3 +1,4 @@
+<?php require_once 'auth.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,5 +10,6 @@
         <textarea name="prompt" rows="10" cols="80" placeholder="Enter your code prompt here..."></textarea><br>
         <button type="submit">Generate Code</button>
     </form>
+    <script src="js/lock.js"></script>
 </body>
 </html>
