@@ -1,5 +1,6 @@
 <?php
 require_once 'auth.php';
+require_once 'config.php';
 $api_key = "sk-...";  // Replace with your OpenAI API key
 $prompt = $_POST['prompt'] ?? '';
 
