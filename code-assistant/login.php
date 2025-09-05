@@ -2,6 +2,7 @@
 session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
+     require_once 'config.php';
     if ($password === "your_strong_password") {
         $_SESSION['authenticated'] = true;
         header("Location: index.php");
@@ -10,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = "Invalid password!";
     }
 }
+   
 ?>
 <!DOCTYPE html>
 <html>
